@@ -84,9 +84,9 @@ body {
 
 .nav-item {
     display: flex;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
     font-size: var(--fl);
-    padding: 0 50px;
 }
 
 .nav-item:hover {
