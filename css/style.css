@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'adventure';
+    src: url('./assets/adventure/Adventure.otf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'adventure';
+}
+
+:root {
+    --fxs: 10px;
+    --fs: 12px;
+    --fm: 16px;
+    --fl: 20px;
+    --fxl: 28px;
+    --theme-light-bg: #f3f3f3;
+    --theme-dark-bg: #0a0a0a;
+    --theme-bg-svg: #76769f;
+    --theme-primary-light-color: #61aaee;
+    --theme-segundary-light-color: #6589f7;
+    --theme-primary-dark-color: #b061f0;
+    --theme-segundary-dark-color: #9165f8;
+    --leather-color-light: #000;
+    --leather-color-dark: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--theme-dark-bg);
+    background-image: url(../assets/favicon.png);
+    background-position: 0 0;
+    background-size: 100px;
+    background-blend-mode: overlay;
+    color: var(--leather-color-dark);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    width: 90vw;
+    height: 350px;
+}
+
+.img-header {
+    width: 100%;
+    height: 100%;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    filter: contrast(2) opacity(.5);
+}
+
+.nav-var {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--theme-primary-dark-color);
+}
+
+.nav-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--fl);
+}
