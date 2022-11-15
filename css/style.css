@@ -48,7 +48,7 @@ body {
 
 .img-container {
     display: flex;
-    width: 90vw;
+    width: 100%;
     height: 350px;
     box-shadow: 5px 5px 1px 1px #000a;
 }
@@ -64,12 +64,24 @@ body {
 .nav-var {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     border-radius: 10px;
     background-color: var(--theme-primary-dark-color);
     border-bottom: 7px solid var(--theme-segundary-dark-color);
     border-right: 7px solid var(--theme-segundary-dark-color);
     box-shadow: 5px 5px 1px 1px #000a;
+}
+
+.nav-img-container {
+    display: flex;
+    width: 200px;
+    height: 57px;
+    padding: 0 10px;
+}
+
+.nav-img {
+    width: 100%;
 }
 
 .nav-list {
