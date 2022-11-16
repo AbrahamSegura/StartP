@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'adventure';
+    font-family: 'adventure', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -29,9 +29,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--theme-dark-bg);
-    background-image: url(../assets/favicon.png);
+    background-image: url(https://res.cloudinary.com/dm2qtlnit/image/upload/v1668618025/favicon_cq6yr2.png);
     background-position: 0 0;
-    background-size: 100px;
+    background-size: 150px;
     background-blend-mode: overlay;
     color: var(--leather-color-dark);
 }
@@ -81,6 +81,7 @@ body {
 }
 
 .nav-img {
+    user-select: none;
     width: 100%;
 }
 
@@ -99,6 +100,7 @@ body {
     width: 100%;
     justify-content: center;
     font-size: var(--fl);
+    user-select: none;
 }
 
 .nav-item:hover {
