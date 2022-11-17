@@ -27,9 +27,10 @@ item.forEach(i => i.addEventListener('click', e => {
     const elem = e.srcElement.childNodes[0].data
     names.map(el => {
         if (el === elem) {
+            const top = listOfNames[elem].offsetTop
             console.log(listOfNames[elem].offsetTop)
-            window.scroll({
-                top: listOfNames[elem],
+            scroll({
+                top,
                 left: 0,
                 behavior: 'smooth'
             })
