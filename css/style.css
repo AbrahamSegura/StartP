@@ -18,9 +18,9 @@
     --leather-color-dark: #fff;
     --shadow-box: 5px 5px 1px 1px #000a;
     --theme-light-bg: #f3f3f3;
-    --theme-dark-bg: #0a0a0a;
     --theme-light-primary-color: #61aaee;
     --theme-light-segundary-color: #6589f7;
+    --theme-dark-bg: #0a0a0a;
     --theme-dark-primary-color: #b061f0;
     --theme-dark-segundary-color: #9165f8;
 }
@@ -50,14 +50,14 @@ body {
     display: flex;
     width: 100%;
     height: 350px;
-    box-shadow: 5px 5px 1px 1px #000a;
+    box-shadow: var(--shadow-box);
 }
 
 .img-header {
     width: 100%;
     height: 100%;
-    border-end-start-radius: 10px;
-    border-end-end-radius: 10px;
+    border-end-start-radius: var(--fxs);
+    border-end-end-radius: var(--fxs);
     filter: contrast(2) opacity(.65);
 }
 
@@ -65,8 +65,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: static;
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--fxs);
     background-color: var(--theme-dark-primary-color);
     border-bottom: 7px solid var(--theme-dark-segundary-color);
     border-right: 7px solid var(--theme-dark-segundary-color);
@@ -117,5 +118,32 @@ body {
     font-size: calc(var(--fl) * 1.5);
     color: var(--theme-dark-segundary-color);
     text-shadow: 1px 1px 1px var(--leather-color-dark);
-    margin-bottom: -1px;
+    margin-bottom: 0;
+}
+
+.box-text-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 10rem);
+}
+
+.text-content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: var(--theme-dark-primary-color);
+    box-shadow: var(--shadow-box);
+    border-bottom: 7px solid var(--theme-dark-segundary-color);
+    border-right: 7px solid var(--theme-dark-segundary-color);
+    border-radius: var(--fxs);
+}
+
+.right {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--theme-dark-segundary-color);
+    border-bottom: 7px solid var(--theme-dark-primary-color);
+    border-right: 7px solid var(--theme-dark-primary-color);
 }
