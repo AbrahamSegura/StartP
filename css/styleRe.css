@@ -1,0 +1,23 @@
+body {
+}
+
+.nav_requisitos {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(187, 0, 255);
+  align-items: center;
+  justify-content: center;
+}
+
+.list_requisitos {
+  display: flex;
+}
+
+.list_requisitos li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 5px;
+}
+
+footer {
+}
