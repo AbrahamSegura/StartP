@@ -8,6 +8,10 @@
   font-family: 'adventure', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 :root {
   --fxs: 10px;
   --fs: 12px;
@@ -15,7 +19,7 @@
   --fl: 20px;
   --fxl: 28px;
   --leather-color-light: #000;
-  --leather-color-dark: #fff;
+  --leather-color-dark: #e7e7e7;
   --shadow-box: 5px 5px 1px 1px #000a;
   --shadow-text: 2px 0 #000b;
   --theme-light-bg: #f3f3f3;
@@ -167,6 +171,31 @@ body {
   background-color: var(--theme-dark-segundary-color);
   border-bottom: 7px solid var(--theme-dark-primary-color);
   border-right: 7px solid var(--theme-dark-primary-color);
+}
+
+.list-title {
+  align-self: center;
+  font-size: var(--fl);
+  font-weight: 600;
+  text-shadow: var(--shadow-text);
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+}
+
+.item-list-content {
+  font-size: var(--fm);
+  text-shadow: var(--shadow-text);
+}
+
+.list-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: var(--fxl);
 }
 
 @media (max-width: 650px) {
