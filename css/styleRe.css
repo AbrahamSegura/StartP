@@ -1,23 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	list-style: none;
+	box-sizing: border-box;
+}
+
 body {
+	font-family: 'Montserrat', sans-serif;
 }
 
-.nav_requisitos {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(187, 0, 255);
-  align-items: center;
-  justify-content: center;
+.art_info_basica_part1 {
+	background: url("../assets/logo/ships.png") no-repeat ;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.list_requisitos {
-  display: flex;
+nav {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #222;
 }
 
-.list_requisitos li {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 5px;
+.logo {
+	width: 140px;
+	margin-left: 20px;
 }
 
-footer {
+.bar-btn {
+	font-size: 25px;
+	color: #fff;
+	margin-right: 20px;
+	cursor: pointer;
 }
+
+.nav_menu {
+	position: fixed;
+	width: 100%;
+	height: 0vh;
+	top: 50px;
+	background-color: #000;
+	text-align: center;
+	transition: all .5s;
+}
+
+.nav_menu li {
+	display: none;
+	line-height: 30px;
+	margin: 50px 0;
+	transition:  all.5s;
+}
+
+.nav_menu li a{
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.nav_menu li a.active, .nav_menu li a:hover {
+	color: ##550;
+	transition: .3s;
+
+}
+
+#check {
+	display: none;
+}
+
+ 
+
+.art_info_basica_part1 h2 {
+	text-align: center;
+	color: white;
+}
+.art_info_basica_part1 h3 {
+	text-align: center;
+	color: white;
+}
+
+#check:checked ~ .nav_menu {
+	height: 100vh;
+}
+
+#check:checked ~ .nav_menu li {
+	display: block;
+
+}
+
+
+
