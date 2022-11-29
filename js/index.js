@@ -6,8 +6,8 @@ const $$ = selector => document.querySelectorAll(selector)
 
 //
 const item = $$('.nav-item')
-
-//const container = $('#container')
+const navBtn = $('.nav-btn')
+const naVar = $('.nav-var')
 const acerca = $('.Acerca')
 const niveles = $('.Proximamente')
 const requisitos = $('.Requisitos')
@@ -36,3 +36,7 @@ item.forEach(i => i.addEventListener('click', e => {
     }
   })
 }))
+navBtn.addEventListener('click', e => {
+  navBtn.classList.toggle('active')
+  naVar.classList.toggle('full')
+})
