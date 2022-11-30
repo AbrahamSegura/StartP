@@ -32,6 +32,11 @@ body {
   color: var(--leather-color-dark);
 }
 
+a {
+  color: var(--leather-color-dark);
+  text-decoration: none;
+}
+
 #container {
   display: flex;
   flex-direction: column;
