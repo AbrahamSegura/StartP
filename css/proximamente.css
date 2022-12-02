@@ -1,0 +1,24 @@
+.main {
+    width: 100%;
+}
+
+.game {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 40px auto;
+}
+
+.game h3 {
+    grid-column: 1 /span 2;
+    margin: auto;
+}
+
+.img-games {
+    width: 100%;
+}
+
+.game-description {
+    width: 80%;
+    margin: auto;
+}

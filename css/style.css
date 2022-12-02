@@ -198,3 +198,22 @@ a {
   flex-direction: column;
   align-items: flex-start;
 }
+
+.list-games {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.list-games li {
+  margin: 20px 0;
+}
+
+.img-games {
+  width: 50%;
+  height: 200px;
+  border-radius: var(--fxs);
+}
+
+.game {
+  width: 65%;
+}
