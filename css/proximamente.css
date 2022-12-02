@@ -22,3 +22,22 @@
     width: 80%;
     margin: auto;
 }
+
+@media (max-width: 750px) {
+    .text-content:nth-child(2n+1) {
+        width: 100%;
+    }
+
+    .game {
+        grid-template-columns: auto;
+        grid-template-rows: 40px auto auto;
+    }
+
+    .img-games {
+        grid-row: 2/3;
+    }
+
+    .game-description {
+        grid-row: 3/4;
+    }
+}
