@@ -1,3 +1,16 @@
 .Requisitos {
+  width: 100%;
+}
+
+.list-content {
+  margin-left: -40px;
+}
+
+@media (max-width:750px) {
+  .Requisitos .text-content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: var(--fl);
+  }
 }

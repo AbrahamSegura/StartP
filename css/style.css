@@ -190,6 +190,7 @@ a {
 .item-list-content {
   font-size: var(--fm);
   text-shadow: var(--shadow-text);
+  padding: 5px 0;
 }
 
 .list-data {
