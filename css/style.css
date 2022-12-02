@@ -35,6 +35,9 @@ body {
 a {
   color: var(--leather-color-dark);
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #container {
@@ -167,119 +170,4 @@ a {
   background-color: var(--theme-dark-segundary-color);
   border-bottom: 7px solid var(--theme-dark-primary-color);
   border-right: 7px solid var(--theme-dark-primary-color);
-}
-
-@media (max-width: 650px) {
-  .nav-var {
-    position: relative;
-    flex-direction: column;
-    width: 50%;
-    margin-top: 5px;
-    justify-content: flex-start;
-    height: 65px;
-    overflow: hidden;
-    transition: .5s;
-  }
-
-  .full {
-    height: 225px;
-    transition: .5s;
-
-  }
-
-  .nav-img-container {
-    width: 100%;
-  }
-
-  .nav-img {
-    width: calc(100% - 3rem);
-  }
-
-  .nav-btn {
-    position: relative;
-    top: 0.85rem;
-    display: flex;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    border: 0;
-    background-color: transparent;
-    gap: .65rem;
-    transition: all .3s ease-in;
-  }
-
-  .nav-img-container .active div:first-child {
-    transform: rotate(45deg);
-    box-shadow: 1px 1px #000a;
-  }
-
-  .nav-img-container .active div:nth-child(2) {
-    opacity: 0;
-  }
-
-  .nav-img-container .active div:last-child {
-    transform: rotate(-45deg);
-    box-shadow: -1px 1px #000a;
-  }
-
-  .nav-btn:active {
-    filter: brightness(.4);
-    box-shadow: none;
-  }
-
-  .nav-btn div {
-    background-color: var(--leather-color-dark);
-    height: 2px;
-    width: 100%;
-    border-radius: 5px;
-    transition: all .5s;
-    transform-origin: left;
-    user-select: none;
-    box-shadow: 3px 3px#000b;
-  }
-
-  .nav-item {
-    font-size: var(--fxl);
-  }
-
-  .box-text-content {
-    grid-template-columns: 1fr;
-  }
-
-  .text-content {
-    width: 75%;
-    grid-column-start: 1;
-    font-size: var(--fl);
-  }
-
-  .text-content h3 {
-    font-size: var(--fxl);
-  }
-
-  .right {
-    grid-column-start: 2;
-  }
-}
-
-@media (max-width: 550px) {
-  .text-content {
-    width: 95%;
-    padding: 10px 0;
-  }
-
-  .text-content h3 {
-    margin: auto;
-  }
-
-  .nav-var {
-    width: 75%;
-  }
-
-  .nav-img-container {
-    width: 100%;
-  }
-
-  .nav-list {
-    flex-direction: column;
-  }
 }
