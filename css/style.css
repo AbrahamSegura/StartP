@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'adventure', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -164,7 +164,7 @@ a {
   text-shadow: var(--shadow-text);
 }
 
-.right {
+.text-content:nth-child(2) {
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: var(--theme-dark-segundary-color);
@@ -183,6 +183,8 @@ a {
   display: flex;
   flex-direction: column;
   text-align: initial;
+  list-style: none;
+  margin-left: -10px;
 }
 
 .item-list-content {
@@ -194,5 +196,4 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: var(--fxl);
 }
