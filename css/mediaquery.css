@@ -122,9 +122,15 @@
 
   .nav-var {
     width: 80%;
+    height: 80px;
   }
 
   .nav-img-container {
     width: 100%;
+  }
+
+  .nav-btn {
+    scale: 1;
+    width: 3rem;
   }
 }
