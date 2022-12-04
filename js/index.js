@@ -4,8 +4,8 @@
 const $ = selector => document.querySelector(selector)
 const $$ = selector => document.querySelectorAll(selector)
 
-//
-const item = $$('.nav-item')
+
+//const item = $$('.nav-item')
 const navBtn = $('.nav-btn')
 const naVar = $('.nav-var')
 // const acerca = $('.Acerca')

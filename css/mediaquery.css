@@ -13,7 +13,6 @@
   .full {
     height: 300px;
     transition: .5s;
-
   }
 
   .nav-img-container {
@@ -36,7 +35,7 @@
     top: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 3.4rem;
+    width: 3.2rem;
     height: 3rem;
     border: 0;
     background-color: transparent;
@@ -125,6 +124,11 @@
     height: 80px;
   }
 
+  .full {
+    height: 300px;
+    transition: .5s;
+  }
+
   .nav-img-container {
     width: 100%;
   }
@@ -133,4 +137,21 @@
     scale: 1;
     width: 3rem;
   }
+}
+
+@media (max-width: 400px) {
+  .nav-btn d {
+    width: 2.5rem;
+  }
+
+  .nav-img-container .active div:first-child {
+    transform: rotate(50deg);
+    box-shadow: 1px 1px #000a;
+  }
+
+  .nav-img-container .active div:last-child {
+    transform: rotate(-50deg);
+    box-shadow: -1px 1px #000a;
+  }
+
 }
