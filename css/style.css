@@ -238,7 +238,7 @@ a {
   width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .employed {
@@ -246,12 +246,13 @@ a {
   grid-template-rows: 80% 20%;
   width: 100%;
   height: 100px;
-  /*margin: auto;*/
-  background-color: #0001;
+  margin-bottom: var(--fxs);
   place-content: center;
 }
 
 .employed-img {
+  display: flex;
+  justify-self: center;
   height: 100%;
   width: 100px;
   border: 1px solid #f3f3f3;
