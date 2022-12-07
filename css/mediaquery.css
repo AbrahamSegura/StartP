@@ -102,6 +102,9 @@
     font-size: var(--fxl);
   }
 
+  .foot-container {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 
 @media (max-width: 550px) {
@@ -145,6 +148,10 @@
 
   .nav-img-container .active div:last-child {
     transform: rotate(-55deg);
+  }
+
+  .foot-container {
+    grid-template-columns: 1fr;
   }
 }
 
