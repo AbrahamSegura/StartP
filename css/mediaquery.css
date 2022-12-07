@@ -105,6 +105,10 @@
   .foot-container {
     grid-template-columns: repeat(2, 50%);
   }
+
+  .foot-title {
+    grid-column: 1/span 2;
+  }
 }
 
 @media (max-width: 550px) {
@@ -150,8 +154,8 @@
     transform: rotate(-55deg);
   }
 
-  .foot-container {
-    grid-template-columns: 1fr;
+  .foot-title {
+    grid-column-start: 1;
   }
 }
 
